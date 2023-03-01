@@ -120,6 +120,20 @@ def get_size_biggest_component(g):
         return 0
     else:
         return len(sorted(nx.connected_components(g), key = len, reverse=True)[0])
+    
+def f_0(z,prob_vec,max_phi):
+    sol = 0
+    for k in range(max_phi):
+        sol = sol + prob_vec[k]*(z**k)
+    return sol
+
+def f_1(z,prob_vec,max_phi,mean_deg):
+    sol = 0
+    for k in range(max_phi):
+        if k != 0:
+            sol = sol + k*prob_vec[k]*(z**(k-1))
+    sol = sol/mean_deg
+    return sol
 
 def get_S_synth_site(degree_list, n):
     size_biggest_component = [0]*100
@@ -179,3 +193,23 @@ def get_S_theory_bond(prob_vec):
         x_intersect = sp.optimize.fsolve(lambda x: 1-p[i]+p[i]*g_1(x,prob_vec,np.mean(degree_list)) - x,0.05)
         S.append((1-g_0(x_intersect,prob_vec)))
     return S, k1, k_s1
+
+
+def get_S_theory_non_uniform(degree_list,prob_vec):
+    S = []
+    for max_phi in range(max(degree_list)):
+        x_intersect = sp.optimize.fsolve(lambda x: 1-f_1(1,prob_vec,max_phi,mean_deg)+f_1(x,prob_vec,max_phi,mean_deg) - x,0.05)
+        S.append(f_0(1,prob_vec,max_phi)-f_0(x_intersect,prob_vec,max_phi))
+    return S
+
+def get_S_synth_non_uniform(graph):
+    components = []
+    for max_phi in range(max([deg[1] for deg in graph.degree])):
+        graph1 = graph.copy()
+        for node in graph.nodes:
+            if graph.degree[node] >= max_phi:
+                graph1.remove_node(node)
+        components.append((get_size_biggest_component(graph1))/len(graph.nodes))
+    return components
+
+
