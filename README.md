@@ -8,6 +8,6 @@ Once Configuration Model is created, it is possible to perform both site and bon
 
 File site_perc.py contains an example for the creation of a Configuration Model for a Poisson distribution with lambda = 4, together with a plot of both site and bond percolation comparing the resultant curve with the theoretical one. 
 
-<img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/bond_percol.png" width="400" height="280">
+<img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/site_percol.png" width="400" height="280">
 <img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/bond_percol.png" width="400" height="280">
 
