@@ -13,4 +13,4 @@ File site_perc.py contains an example for the creation of a Configuration Model 
 
 File functions.py contains also the functions to perform non-uniform percolation on a given graph. Threshold value here depends on the degree of the nodes. File non_unif_percolation.py contains an example for the  creation of a Configuration Model for a Power Law distribution with a = 2.5, together with a plot of biggest component size for different degree thresholds, comparing theoretical and resultant curves.
 
-<img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/non_uniform_percolation.jpg" width="400" height="280">
+<img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/non_uniform_percolation.jpg" width="600" height="280">
