@@ -1,10 +1,10 @@
 #%%
-prob_vec = prob_list_poisson(4,1) #customizable values of lambda and probability distribution
+prob_vec = prob_list_poisson(4,1) #for power law use "prob_list_powerlaw"
 degree_list = discrete_samples(prob_vec,10000) #customizable number of nodes in the network
 graph = config_model(degree_list)
 #%%
-size_biggest_component, k, k_s = get_S_synth_site(degree_list, 1) #site percolation
-S,k1,k_s1 = get_S_theory_site(prob_vec)
+size_biggest_component, k, k_s = get_S_synth_site(degree_list, 1) #for bond use "get_S_synth_bond"
+S,k1,k_s1 = get_S_theory_site(prob_vec) #for bond use "get_S_theory_bond"
 
 #%%
 p = np.linspace(0,1,100)
