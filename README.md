@@ -11,7 +11,7 @@ File functions.py in src folder contains all the functions to do so. Available p
 Once Configuration Model is created, it is possible to perform different kind of percolation processes on the network. Available percolation models are site percolation, bond percolation and degree-based percolation. 
 File percolation.py contains an example for all these scenarios. Plots below show the evolution of the biggest component of a Configuration Model comparing synthetic and theoretical results. 
 
-<img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/site_percolation.png" width="400" height="280" /> <img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/bond_percolation.png" width="400" height="280"/>
+<img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/site_percolation.png" width="380" height="240" /> <img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/bond_percolation.png" width="380" height="240"/>
 <img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/non_uniform_percolation.jpg" width="680" height="280">
 
 ## SATRW 
