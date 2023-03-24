@@ -20,8 +20,8 @@ Another possible way to diluite a network is using the Self Avoiding Teleport Ra
 File SATRW.py contains scripts to perform this technique on a given network. Below, plots show the evolution of the time dependent probability distribution and the evolution of the size of the giant component of the network (comparison between theoretical and simulated results). 
 
 
-<img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/degree_dist_ER.png" width="500" height="400" /> <img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/degree_dist_SF" width="500" height="400" />
-<img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/giant_comp_ER.png" width="500" height="400" /> <img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/giant_comp_SF" width="500" height="400" />
+<img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/degree_dist_ER.png" width="500" height="400" /> <img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/degree_dist_SF.png" width="500" height="400" />
+<img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/giant_comp_ER.png" width="500" height="400" /> <img src="https://github.com/MatteoScianna/Configuration_Model_-_Percolation/blob/main/img/giant_comp_SF.png" width="500" height="400" />
 
 ## SIR Model
 
